@@ -6,7 +6,7 @@
     }
 
     .descripcion-pagina {
-        background-color:#096B68;
+        
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -38,18 +38,6 @@
         color: #096B68;
     }
 
-.carousel {
-    margin: 0;
-    padding: 0;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
 
 /* Ajuste para pantallas pequeñas (celulares, tablets) */
 @media (max-width: 768px) {
@@ -68,6 +56,42 @@
 
     .carousel-caption p {
         font-size: 1rem;
+    }
+}
+
+.carousel {
+    position: relative;
+}
+
+
+.carousel-overlay {
+    pointer-events: none; /* para que el texto no interfiera con los controles del carrusel */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 800px; /* Perfecto para pantallas gigantes */
+    object-fit: cover;
+}
+
+/* Laptops y pantallas medianas */
+@media (max-width: 1200px) {
+    .carousel-inner img {
+        height: 600px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 400px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .carousel-inner img {
+        height: 250px;
     }
 }
 
