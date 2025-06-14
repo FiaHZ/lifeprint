@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestión de Tratamientos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/lifeprint/style/gestion.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/lifeprint/img/logo1.png" alt="Logo" />
+      <strong>Gestión de Tratamientos</strong>
+    </div>
+    <button class="hamburger" aria-label="Abrir menú" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="Historial.html">Historial Médico</a></li>
+      <li><a href="Perfiles.html">Perfiles</a></li>
+      <li><a href="Alertas.html">Alertas</a></li>
+      <li><a href="Gestion.html">Tratamientos</a></li>
+      <li><a href="Privacidad.html">Privacidad</a></li>
+      <li><a href="Ajustes.html">Ajustes</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Seguimiento de Tratamientos</h1>
+      <p>
+        Lleva un registro claro y actualizado de los tratamientos aplicados a tus mascotas, facilitando su seguimiento y
+        evaluación.
+      </p>
+      <img src="/lifeprint/img/corazon.webp" alt="corazon" class="img-corazon" />
+    </div>
+    <img src="/lifeprint/img/salud1.png" alt="salud1" class="img-salud style="width: 450px; height: auto;" />
+  </section>
+
+  <main class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 d-flex justify-content-center" id="cardsContainer">
+
+      <div class="col treatment-card" data-name="feito">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header card-header-custom d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-paw-fill"></i> Feito - 01</span>
+            <span class="badge bg-success">Activo</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Medicamento:</strong> Ovistop</p>
+            <p><strong>Dosis:</strong> 1 pastilla por día</p>
+            <p><strong>Inicio:</strong> 05/09/2024</p>
+            <p><strong>Finaliza:</strong> 20/09/2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col treatment-card" data-name="karin">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header card-header-custom d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-paw-fill"></i> Karin - 02</span>
+            <span class="badge bg-secondary">Finalizado</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Medicamento:</strong> Amoxicilina</p>
+            <p><strong>Dosis:</strong> 0.5 mg</p>
+            <p><strong>Inicio:</strong> 12/09/2024</p>
+            <p><strong>Finaliza:</strong> 12/09/2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col treatment-card" data-name="molly">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header card-header-custom d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-paw-fill"></i> Molly - 03</span>
+            <span class="badge bg-secondary">Finalizado</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Medicamento:</strong> Nexgard</p>
+            <p><strong>Dosis:</strong> 1</p>
+            <p><strong>Inicio:</strong> 17/09/2024</p>
+            <p><strong>Finaliza:</strong> 17/09/2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col treatment-card" data-name="caramelito">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header card-header-custom d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-paw-fill"></i> Caramelito - 04</span>
+            <span class="badge bg-success">Activo</span>
+          </div>
+          <div class="card-body">
+            <p><strong>Medicamento:</strong> Emicina</p>
+            <p><strong>Dosis:</strong> 1 por día</p>
+            <p><strong>Inicio:</strong> 14/09/2024</p>
+            <p><strong>Finaliza:</strong> 17/09/2024</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>
