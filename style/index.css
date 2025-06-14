@@ -1,0 +1,74 @@
+
+    body {
+        background-color: #90D1CA;
+        font-family: 'Segoe UI', sans-serif;
+        
+    }
+
+    .descripcion-pagina {
+        background-color:#096B68;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        color: #000000;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-body {
+        background-color: #FFFFFF;
+        border-top: 4px solid #129990;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .card h2 {
+        color: #129990;
+    }
+
+    .card-text {
+        color: #096B68;
+    }
+
+.carousel {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste para pantallas pequeñas (celulares, tablets) */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .carousel-caption {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+
