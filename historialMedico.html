@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial Médico</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../style/historialMedico.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">
+      <img src="../img/logo1.png" alt="Logo" />
+      <strong>Historial Médico</strong>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div class="overlay" onclick="toggleMenu()"></div>
+  <!-- Menú lateral -->
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="historialMedico.html">Historial Médico</a></li>
+      <li><a href="./perfilanimal/perfianimal.html">Perfiles</a></li>
+      <li><a href="./Gestion/Gestion.html">Tratamientos</a></li>
+      <li><a href="Alertas.html">Alertas</a></li>
+      <li><a href="Privacidad.html">Privacidad</a></li>
+      <li><a href="Ajustes.html">Ajustes</a></li>
+    </ul>
+  </nav>
+  <!-- contenido de seccion cabecera-->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Registra su salud</h1>
+      <p>
+        Registra visitas, recetas, cirugías, resultados y vacunas para contar con toda la
+        información clínica de tu mascota en un solo lugar.
+      </p>
+      <!--<img src="../img/mancha.png" alt="" />-->
+    </div>
+    <img src="../img/perrito.png" alt="perrito" />
+  </section>
+
+  <main class="action-list container py-5">
+
+    <!-- Registrar Visitas -->
+    <label class="btn btn-dark-green w-100 mb-3" for="toggle-form-1">Registrar visitas</label>
+    <input type="checkbox" id="toggle-form-1" class="toggle-form">
+    <div class="form-overlay">
+      <div class="form-container">
+        <label for="toggle-form-1" class="close-btn">&times;</label>
+        <h2>Registrar Visita</h2>
+        <form>
+          <div class="form-group">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label>Mascota:</label>
+            <input type="text" name="mascota" required>
+          </div>
+          <div class="form-group">
+            <label>Motivo de la visita:</label>
+            <textarea name="motivo" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Subir Resultados -->
+    <label class="btn btn-dark-green w-100 mb-3" for="toggle-form-1">Subir resultados</label>
+    <input type="checkbox" id="toggle-form-2" class="toggle-form">
+    <div class="form-overlay">
+      <div class="form-container">
+        <label for="toggle-form-2" class="close-btn">&times;</label>
+        <h2>Subir Resultados</h2>
+        <form>
+          <div class="form-group">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label>Tipo de resultado:</label>
+            <input type="text" name="tipo" required>
+          </div>
+          <div class="form-group">
+            <label>Archivo:</label>
+            <input type="file" name="archivo" required>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Receta Médica -->
+    <label class="btn btn-dark-green w-100 mb-3" for="toggle-form-1">Añadir receta médica</label>
+    <input type="checkbox" id="toggle-form-3" class="toggle-form">
+    <div class="form-overlay">
+      <div class="form-container">
+        <label for="toggle-form-3" class="close-btn">&times;</label>
+        <h2>Añadir receta médica</h2>
+        <form>
+          <div class="form-group">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label>Medicamento:</label>
+            <input type="text" name="medicamento" required>
+          </div>
+          <div class="form-group">
+            <label>Dosis:</label>
+            <input type="text" name="dosis" required>
+          </div>
+          <div class="form-group">
+            <label>Instrucciones:</label>
+            <textarea name="instrucciones" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Registrar Cirugía -->
+    <label class="btn btn-dark-green w-100 mb-3" for="toggle-form-1">Registrar cirugía</label>
+    <input type="checkbox" id="toggle-form-4" class="toggle-form">
+    <div class="form-overlay">
+      <div class="form-container">
+        <label for="toggle-form-4" class="close-btn">&times;</label>
+        <h2>Registrar Cirugía</h2>
+        <form>
+          <div class="form-group">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label>Tipo de cirugía:</label>
+            <input type="text" name="cirugia" required>
+          </div>
+          <div class="form-group">
+            <label>Notas:</label>
+            <textarea name="notas" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Calendario de Vacunación -->
+    <label class="btn btn-dark-green w-100 mb-3" for="toggle-form-1">Calendario de vacunación</label>
+    <input type="checkbox" id="toggle-form-5" class="toggle-form">
+    <div class="form-overlay">
+      <div class="form-container">
+        <label for="toggle-form-5" class="close-btn">&times;</label>
+        <h2>Calendario de Vacunación</h2>
+        <form>
+          <div class="form-group">
+            <label>Mascota:</label>
+            <input type="text" name="mascota" required>
+          </div>
+          <div class="form-group">
+            <label>Vacuna:</label>
+            <input type="text" name="vacuna" required>
+          </div>
+          <div class="form-group">
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer-custom text-center mt-5">
+    <div class="container py-3">
+      <p><strong>Pet's History</strong></p>
+      <p>Aplicación desarrollada por estudiantes de la Universidad Técnica Nacional.</p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+      document.querySelector(".overlay").classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>
