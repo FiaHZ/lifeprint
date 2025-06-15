@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfiles de animales</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../style/perfilanimal.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../img/logo1.png" alt="Logo" />
+        <strong>Perfiles de Animales</strong>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <nav id="sideMenu">
+      <ul>
+        <li><a href="Historial.html">Historial Médico</a></li>
+        <li><a href="Perfiles.html">Perfiles</a></li>
+        <li><a href="Alertas.html">Alertas</a></li>
+        <li><a href="Gestion.html">Tratamientos</a></li>
+        <li><a href="Privacidad.html">Privacidad</a></li>
+        <li><a href="Ajustes.html">Ajustes</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Conoce a tus Mascotas</h1>
+        <p>
+          Revisa y gestiona los perfiles médicos y cuidados de tus animales
+          desde un solo lugar con toda la información que necesitas siempre a
+          mano.
+        </p>
+        <img src="../img/mancha.png" alt="" />
+      </div>
+      <img src="../img/gato.png" alt="gato" />
+    </section>
+
+    <main class="main-content">
+      <div class="pet-grid">
+        <article class="pet-card">
+          <img src="../img/feito-1.png" alt="feito" />
+          <div class="pet-info">
+            <h3>Feito</h3>
+            <p><strong>Raza:</strong> Pug</p>
+            <p><strong>Especie:</strong> Perro</p>
+            <p><strong>Edad:</strong> 2 años</p>
+            <p><strong>Peso:</strong> 12 kg</p>
+          </div>
+        </article>
+
+        <article class="pet-card">
+          <img src="../img/feito-1.png" alt="feito" />
+          <div class="pet-info">
+            <h3>Feito</h3>
+            <p><strong>Raza:</strong> Pug</p>
+            <p><strong>Especie:</strong> Perro</p>
+            <p><strong>Edad:</strong> 2 años</p>
+            <p><strong>Peso:</strong> 12 kg</p>
+          </div>
+        </article>
+
+        <article class="pet-card">
+          <img src="../img/feito-1.png" alt="feito" />
+          <div class="pet-info">
+            <h3>Feito</h3>
+            <p><strong>Raza:</strong> Pug</p>
+            <p><strong>Especie:</strong> Perro</p>
+            <p><strong>Edad:</strong> 2 años</p>
+            <p><strong>Peso:</strong> 12 kg</p>
+          </div>
+        </article>
+
+        <article class="pet-card">
+          <img src="../img/feito-1.png" alt="feito" />
+          <div class="pet-info">
+            <h3>Feito</h3>
+            <p><strong>Raza:</strong> Pug</p>
+            <p><strong>Especie:</strong> Perro</p>
+            <p><strong>Edad:</strong> 2 años</p>
+            <p><strong>Peso:</strong> 12 kg</p>
+          </div>
+        </article>
+
+        <!-- Puedes duplicar el <article> para más mascotas -->
+      </div>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("sideMenu").classList.toggle("open");
+        document.querySelector(".overlay").classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
