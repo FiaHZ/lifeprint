@@ -108,8 +108,8 @@ nav ul li a {
 
 .hero .hero-text img {
   position: absolute;
-  top: -225px;
-  left: -85px;
+  top: -220px;
+  left: -80px;
   z-index: 0;
   height: auto;
   width: 500px;
@@ -124,7 +124,7 @@ nav ul li a {
 
 .hero img {
   width: 300px;
-  transform: translateY(78px) scale(1.6);
+  transform: translateY(102px) scale(1.6);
 }
 
 .hero-text h1,
@@ -135,7 +135,7 @@ nav ul li a {
 }
 
 .hero-text p {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 150px;
 }
 
