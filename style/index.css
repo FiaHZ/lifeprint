@@ -7,7 +7,7 @@
   --gris: #f6f6f6;
 }
     body {
-        background-color: #f6f6f6;
+        background-color: #b1dbd7;
          font-family: 'Open Sans', sans-serif;
          font-weight: 300;
     }
@@ -16,10 +16,8 @@
         padding: 20px;
         border-radius: 6px;
         color: #000000;
-        font-size: 20px;
+        font-size: 22px;
         background-color: #90D1CA;
-        font-style: italic;
-        font-size: 1.15rem;
         line-height: 1.8;
     }
 
@@ -87,14 +85,14 @@
     .overlay h2 {
      margin-top: 55%;
      margin-bottom: 5px;
-     font-size: 30px;
+     font-size: 20px;
      font-weight: 500;
      letter-spacing: 2px;
      color: #fcfbf5;
     }
 
      .overlay p {
-     font-size: 20px;
+     font-size: 18px;
      font-weight: 500;
      color: #f3f2ed;
     }
@@ -108,6 +106,60 @@
         height: 100%;
         
     }
+
+   @media (max-width: 992px) {
+    .card {
+        height: 300px;
+    }
+
+    .overlay h2 {
+        margin-top: 45%;
+        font-size: 18px;
+    }
+
+    .overlay p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 260px;
+    }
+
+    .overlay {
+        padding: 0 30px;
+    }
+
+    .overlay h2 {
+        margin-top: 40%;
+        font-size: 16px;
+    }
+
+    .overlay p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        height: 220px;
+    }
+
+    .overlay h2 {
+        margin-top: 35%;
+        font-size: 14px;
+    }
+
+    .overlay p {
+        font-size: 12px;
+    }
+
+    .overlay {
+        padding: 0 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .carousel-inner img {
@@ -130,11 +182,6 @@
 
 .carousel {
     position: relative;
-}
-
-
-.carousel-overlay {
-    pointer-events: none; 
 }
 
 .carousel-inner img {
