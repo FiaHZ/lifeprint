@@ -1,48 +1,99 @@
 
     body {
-        background-color: #90D1CA;
-        font-family: 'Segoe UI', sans-serif;
-        
+        background-color: #c4ebe7;
+         font-family: 'Open Sans', sans-serif;
+         font-weight: 300;
     }
 
     .descripcion-pagina {
-        
         padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 6px;
         color: #000000;
+        font-size: 20px;
+        background-color: #129990;
+        font-style: italic;
+        
     }
 
-    .card {
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
+    .container2{
+      padding: 50px 0;
     }
 
-    .card:hover {
-        transform: translateY(-5px);
+    .wrapper{
+        padding: 10px 10%;
     }
 
-    .card-body {
-        background-color: #FFFFFF;
-        border-top: 4px solid #129990;
-        border-radius: 0 0 15px 15px;
+    .card_area{
+        display: grid;
+        margin-top: 50px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        height: 360px
     }
 
-    .card h2 {
-        color: #129990;
+    .card{
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.233);
+        overflow: hidden;
+        height: 360px
     }
 
-    .card-text {
-        color: #096B68;
+    .card img{
+        height: 360px;
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+        transition: transform 0.3s;
     }
 
+    .overlay{
+        height: 0;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        background: linear-gradient(transparent, #1c1c1cbb 60%);
+        padding: 0 50px;
+        text-align: center;
+        font-size: 14px;
+        transition: height 0.3s;
+    }
 
-/* Ajuste para pantallas pequeñas (celulares, tablets) */
+    .overlay h2 {
+     margin-top: 55%;
+     margin-bottom: 5px;
+     font-size: 30px;
+     font-weight: 500;
+     letter-spacing: 2px;
+     color: #fcfbf5;
+    }
+
+     .overlay p {
+     font-size: 20px;
+     font-weight: 500;
+     color: #f3f2ed;
+    }
+
+    .card:hover img{
+        transform: scale(1.2);
+
+    }
+
+     .card:hover .overlay{
+        height: 100%;
+        
+    }
+
 @media (max-width: 768px) {
     .carousel-inner img {
-        height: 250px;
+        height: 800px;
     }
 
     .carousel-caption {
@@ -65,12 +116,12 @@
 
 
 .carousel-overlay {
-    pointer-events: none; /* para que el texto no interfiera con los controles del carrusel */
+    pointer-events: none; 
 }
 
 .carousel-inner img {
     width: 100%;
-    height: 800px; /* Perfecto para pantallas gigantes */
+    height: 800px; 
     object-fit: cover;
 }
 
@@ -94,5 +145,6 @@
         height: 250px;
     }
 }
+
 
 
