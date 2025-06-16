@@ -122,49 +122,11 @@
     }
 }
 
-@media (max-width: 768px) {
-    .card {
-        height: 260px;
-    }
 
-    .overlay {
-        padding: 0 30px;
-    }
-
-    .overlay h2 {
-        margin-top: 40%;
-        font-size: 16px;
-    }
-
-    .overlay p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        height: 220px;
-    }
-
-    .overlay h2 {
-        margin-top: 35%;
-        font-size: 14px;
-    }
-
-    .overlay p {
-        font-size: 12px;
-    }
-
-    .overlay {
-        padding: 0 20px;
-    }
-}
 
 
 @media (max-width: 768px) {
-    .carousel-inner img {
-        height: 800px;
-    }
+   
 
     .carousel-caption {
         max-width: 90%;
@@ -267,4 +229,22 @@ nav ul li a {
 
 .overlay-menu.active {
   display: block;
+}
+
+.footer-custom {
+  background-color: var(--verde);
+  color: var(--blanco);
+  padding: 10px 0;
+  margin-top: 40px;
+  border-top: 10px solid var(--verde-oscuro);
+}
+
+.footer-custom p {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer-custom strong {
+  font-size: 1.2rem;
+  color: var(--blanco);
 }
