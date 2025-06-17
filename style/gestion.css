@@ -99,10 +99,10 @@ nav ul li a {
   transition: background-color 0.2s ease;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-  background-color: #0d7f79;
-  outline: none;
+nav ul li a:hover {
+  background-color: var(--verde-claro); /* o cualquier color */
+  color: var(--verde-oscuro); /* texto más oscuro al pasar */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 
