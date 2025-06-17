@@ -144,17 +144,19 @@ nav ul li a:hover {
   margin-bottom: 1.5rem;
 }
 
+
 .img-corazon {
   position: absolute;
   top: -250px;
-  left: -150px;
-  width: 950px;
-  height: 950px;
+  right: -800px;
+  width: 435px;
+  height: 743px;
   object-fit: contain;
   opacity: 0.25;
   z-index: 0;
   pointer-events: none;
 }
+
 
 .img-carta {
   width: 150px;
