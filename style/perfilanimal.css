@@ -119,7 +119,7 @@ nav ul li a:hover {
 
 .hero .hero-text img {
   position: absolute;
-  top: -220px;
+  top: -210px;
   left: -80px;
   z-index: 0;
   height: auto;
@@ -137,7 +137,16 @@ nav ul li a:hover {
   width: 300px;
   transform: translateY(102px) scale(1.6);
 }
-
+.img-gato {
+  margin-top: 43px;
+}
+.img-mancha {
+ position: absolute; 
+  width: 200px;       
+  left: 200px;        
+  top: 50px;         
+  z-index: -1;     
+}
 .hero-text h1,
 .hero-text p,
 .hero-text button {
