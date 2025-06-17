@@ -17,6 +17,8 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   background-color: var(--gris);
   color: var(--verde-oscuro);
+  padding-left: 0;
+  transition: padding-left 0.3s;
 }
 
 header {
@@ -48,6 +50,7 @@ header {
   border: none;
   color: var(--verde-oscuro);
   display: block;
+    z-index: 1200;
 }
 
 nav {
@@ -58,8 +61,9 @@ nav {
   height: 100%;
   background-color: var(--verde);
   padding-top: 60px;
-  transition: left 0.3s ease;
-  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  z-index: 2000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 nav.open {
@@ -69,6 +73,7 @@ nav.open {
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -81,6 +86,12 @@ nav ul li a {
   color: var(--blanco);
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #0d7f79;
+  outline: none;
 }
 
 .overlay {
@@ -91,7 +102,7 @@ nav ul li a {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
-  z-index: 2;
+  z-index: 1500;
 }
 
 .overlay.active {
